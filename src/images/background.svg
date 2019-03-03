@@ -1,0 +1,21 @@
+
+<svg  width="100%"
+            height="100%"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink">
+   
+   <pattern id="pattern-cubes" x="0" y="126" patternUnits="userSpaceOnUse" width="126" height="200" viewBox="0 0 10 16"> 
+   
+     <g id="cube">
+       <path className="left-shade" d="M0 0l5 3v5l-5 -3z" />
+       <path className="right-shade" d="M10 0l-5 3v5l5 -3" />
+     </g>
+     <use x="5" y="8" xlinkHref="#cube" />
+     <use x="-5" y="8" xlinkHref="#cube" />
+   
+   </pattern>
+ 
+   <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-cubes)" />
+  
+</svg>
+

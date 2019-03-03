@@ -1,33 +1,113 @@
-.App {
+body{
+  height: 100vh;
+  width: 100vw;
+  min-height: 100vh;
+
+}
+.left-shade{
+  fill:#7bd4d6;
+}
+.right-shade{
+  fill:#8b8897;
+}
+.hgh{grid-area:header;}
+.hgf{grid-area:footer;}
+.hgm{grid-area:main;}
+.hgl{grid-area:side-l;}
+.hgr{grid-area:side-r}
+.hg{
+  width:100vw;
+  height:100vh;
+ 
+  display:grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  grid-template-rows: 150px 1fr 200px;
+  grid-row-gap:10px;
+
+  grid-template-areas:"header header header header header"
+                      "side-l main main main side-r"
+                      "footer footer footer footer footer";
+  color:white;
+  animation: fade-in 4s;
+}
+
+.top{
+  background-color:#A59BFF ;
+}
+.bottom{
+  border:black 4px solid;
+}
+.hm{
+  border-radius:20px;
+  background-image: linear-gradient(to right top, #7bd4d6, #67a6bb, #5e7a93, #4f5164, #352e37, #312a30, #2c262a, #272325, #403a3e, #59525a, #726c78, #8b8897);
+}
+/* background-image: linear-gradient(to right bottom, #3a9a97, #2e798b, #375972, #373b4f, #29222c, #281f27, #271c23, #25191e, #3a2633, #4e354b, #5f4568, #6b5887); */
+
+/* .ht{
+  background-image:linear-gradient(#3a9a97,#7dd1a0);
+}
+.hb{
+  background-image:linear-gradient(#7dd1a0,#3a9a97);
+}
+.hs{
+  background-image:linear-gradient(to right,#DD6B59,#F6E382 );
+} */
+
+.lean h1{
+  text-align:center;
+  color:white;
+  opacity:.75;
+  text-shadow:black 2px 2px,#969DFB 3px 3px;
+}
+.menu{
+  position:relative;
+  height:100%;
+  width:100%;
+}
+.menu ul{
+  list-style: none;
+}
+.menu li{
+  font-size:20px;
+  margin:2em;
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.menu nav{
+  color:black;
+}
+.menu p{
+  position:relative;
+  bottom:45px;
+  left:150px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+
+.mg{
+  display:grid;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap:10px;
   }
-  to {
-    transform: rotate(360deg);
+  .mg article{
+    background-color:white;
+    color:black;
+    text-align: center;
+    align-self:center;
+    justify-self:center;
+
+    width:90%;
+    height:90%;
+    border-radius:20px;
+  }
+
+@keyframes fade-in{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
   }
 }
