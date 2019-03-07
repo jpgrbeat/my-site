@@ -20,20 +20,19 @@ body{
 }
 .tr{
   position: absolute;
-  animation: top-right 3s;
+  animation: top-right 10s;
 }
 .tl{
   position: absolute;
-  animation: top-left 3s;
+  animation: top-left 10s;
 }
 .br{
   position: absolute;
-  animation: bottom-right 3s;
+  animation: bottom-right 10s;
 }
 .bl{
   position: absolute;
-  animation: bottom-left 3s;
-
+  animation: bottom-left 10s;
 }
 .is img{
   width:25%;
